@@ -1,0 +1,36 @@
+<div class="card mx-auto">
+    <form [formGroup]="signInForm" (submit)="submit()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-input border rounded" formControlName="email" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" *ngIf="" class="form-text text-danger">Please enter valid email.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <div class="d-flex border rounded">
+                <input [type]="password?'password':'text'" formControlName="password" class="form-input"
+                    id="exampleInputPassword1" placeholder="Password">
+                <img style="margin:0 2% 0 0;cursor:pointer"
+                    [src]="password?'../../../assets/image/icons/eye-slash.svg':'../../../assets/image/icons/eye.svg'"
+                    (click)="showPassword()" alt="eye">
+            </div>
+            <small id="emailHelp" *ngIf="signInForm.controls['email'].invalid" class="form-text text-danger">Please
+                enter valid email.</small>
+        </div>
+        <div class="form-group">
+
+            <a href="javascript:void()" [routerLink]="[links.FORGOT_PASSWORD]">Forgot password?</a>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-success">Sign In</button>
+            </div>
+            <div class="col-6">
+                <button type="button" [routerLink]="[links.SIGN_UP]" class="btn btn-primary"
+                    style="margin-left: 80px;">Sign Up</button>
+            </div>
+        </div>
+
+    </form>
+</div>
