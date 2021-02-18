@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AUTH_PATH, REGEX } from '../../constants'
+import { AUTH_PATH, REGEX } from '../../constants';
 
 @Component({
   selector: 'app-sign-in',
@@ -26,15 +26,15 @@ export class SignInComponent implements OnInit {
     })
   }
 
-  submit() {
+ async submit() {
     if (this.signInForm.valid) {
 
     } else {
       Object.keys(this.signInForm.controls).forEach((item) => {
         this.signInForm.controls[item].markAsTouched({ onlySelf: true });
-      })
+      });
     }
-    console.log(this.signInForm.value)
+    console.log(this.signInForm.value);
   }
 
   showPassword() {
