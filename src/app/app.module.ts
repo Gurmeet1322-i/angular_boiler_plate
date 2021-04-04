@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { NgxSpinnerModule } from 'ngx-spinner'
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,8 @@ import { ResetPasswordComponent } from './auth/reset-password/reset-password.com
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './common/spinner/spinner.component';
+import { InterceptorService } from './core/services/interceptor-service';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,18 @@ import { SpinnerComponent } from './common/spinner/spinner.component';
     ReactiveFormsModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot({
+      tapToDismiss:true,
+      progressAnimation:'increasing',
+      // closeButton:true
+    })
   ],
-  providers: [],
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass:InterceptorService,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

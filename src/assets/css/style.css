@@ -1,0 +1,14 @@
+@import 'defalut.css';
+@import 'login.css';
+@import 'header.css';
+@import 'user-detail.css';
+@import 'right-sidebar.css';
+@import 'table.css';
+@import 'search.css';
+@import 'checkbox.css';
+@import 'checked-popup.css';
+@import 'modal.css';
+@import 'upload-image.css';
+@import 'custom_view.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');

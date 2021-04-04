@@ -1,0 +1,15 @@
+.checked_popup ul li {padding-left: 20px;padding-right: 20px;display: flex;align-items: center;color: #fff;cursor:pointer;}
+.checked_popup ul li:first-child {border-right: 1px solid #fff;padding-left: 25px;padding-right: 25px;}
+.checked_popup {position: fixed;bottom: 30px;margin: auto;text-align: center;display: none;left: 0;right: 0;width: 500px;}
+.checked_popup ul {display: flex;flex-wrap: nowrap;background: #20223b;width: auto;padding: 15px;border-radius: 60px;margin: auto;text-align: center;align-items: center;justify-content: space-between;
+min-height: 60px;}
+.checked_popup ul li a {color: #fff;}
+.checked_popup li:last-child a{color:#e16450;}
+.checked_popup ul li:first-child a {color: #0396fa;}
+@media(max-width: 991px){
+.checked_popup {bottom: 50px;text-align: left;left: auto;width: auto;}
+.checked_popup ul li{padding-bottom: 10px;padding-left:0;	padding-right: 0;}
+.checked_popup ul li:first-child{border: 0;padding-left:0;	padding-right: 0;}
+.checked_popup ul{border-radius: 5px;flex-direction: column;align-items: start;}
+
+}

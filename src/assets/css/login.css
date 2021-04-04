@@ -1,0 +1,62 @@
+/** Login CSS **/
+html, body {height: 100%;}
+.front-forms {height:100%; display:flex; align-items:center; position:relative; overflow-x: hidden; background: url(../img/bg.png) no-repeat center; background-size: cover;}
+.front-logo {margin:0 0 25px;}
+.front-logo img {width:158px;}
+.login_box {max-width:420px; margin:20px auto;background-color: #0096ff;
+    border-radius: 5px; padding:40px 75px 25px;
+    box-shadow: 0 10px 37px 0 rgb(0 0 0 / 82%);
+    position: relative;}
+.form-box {width:100%;  border-radius:10px; margin:30px auto 40px}
+.form-box h2 {margin-bottom:30px;}
+.form-box label {font-size:17px; text-align:left; font-weight:300; color:#2E2E2E; margin:0 0 7px; }
+.form-box a {font-size:18px; font-weight:400; color:#2E2E2E;}
+.form-box a:hover {color:#4da3b7;}
+.icon_wrapper{
+	position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.front-forms input{background: transparent; color: #212529;}
+
+.form-group:focus input{ border: 1px solid #65bbd4;}
+.pass_eye input{padding-right: 50px;}
+.icon-password {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.forgot_pass a{font-size: 14px; color: #ffffff;}
+.forgot_pass a:hover, .forgot_pass a:focus{color: #ffffff;}
+.front-logo h4{margin-bottom: 2.5rem; font-weight: 400; color:#fff;}
+
+@media (max-width:1440px){
+.login_box {margin:15px auto;}
+.front-logo {margin:0 0 20px;}
+.form-box h2 {margin-bottom:20px;}
+.login_box {max-width:500px}
+.form-box a, .form-box label {font-size:16px;}
+.front-logo img {width:240px;}
+}
+
+@media (max-width:991px){
+.login_box {max-width:64%;}
+.front-logo img {width:150px;}
+.front-forms:before{padding: 22%;}
+
+}
+
+@media (max-width:767px){
+.login_box {max-width:85%;}
+
+}
+
+@media (max-width:575px){
+.login_box {max-width:100%;padding: 40px 25px 25px;}
+.form-box p br {display:none;}
+.front-logo h4{margin-bottom:0.5rem; }
+
+}
+

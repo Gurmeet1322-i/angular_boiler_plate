@@ -1,39 +1,54 @@
-<div class="card mx-auto">
-    <form [formGroup]="signInForm" (submit)="submit()">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-input border rounded" formControlName="email" id="exampleInputEmail1"
-                aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" *ngIf="signInForm.controls['email'].hasError('required') && signInForm.controls['email'].touched" class="form-text text-danger">Please
-                    Please enter email.</small>
-                    <small id="emailHelp" *ngIf="signInForm.controls['email'].hasError('pattern') && signInForm.controls['email'].touched" class="form-text text-danger">
-                        Please enter valid email.</small>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <div class="d-flex border rounded">
-                <input [type]="password?'password':'text'" formControlName="password" class="form-input"
-                    id="exampleInputPassword1" placeholder="Password">
-                <img style="margin:0 2% 0 0;cursor:pointer"
-                    [src]="password?'../../../assets/image/icons/eye-slash.svg':'../../../assets/image/icons/eye.svg'"
-                    (click)="showPassword()" alt="eye">
-            </div>
-            <small id="emailHelp" *ngIf="signInForm.controls['password'].hasError('required') && signInForm.controls['password'].touched" class="form-text text-danger">Please
-                Please enter password.</small>
-        </div>
-        <div class="form-group">
-
-            <a href="javascript:void()" [routerLink]="[links.FORGOT_PASSWORD]">Forgot password?</a>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <button type="submit" class="btn btn-success">Sign In</button>
-            </div>
-            <div class="col-6">
-                <button type="button" [routerLink]="[links.SIGN_UP]" class="btn btn-primary"
-                    style="margin-left: 80px;">Sign Up</button>
-            </div>
-        </div>
-
-    </form>
+<div class="front-forms">
+    <div class="container-fluid">
+        <div class="login_box">
+            <div class="front-logo text-center">
+                    <img src="assets/img/logo.svg" alt="blyott"/>
+                </div>	
+            <form class="form-box" [formGroup]="signInForm" (ngSubmit)="submit()">	
+                    
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                             <span class="icon_wrapper">
+                                    <img src="assets/img/icons/admin.svg" alt="blyott" width="20"/>									
+                              </span>
+                            <input type="text" class="form-control" formControlName="username" placeholder="Username">
+                            <span class="error-message" *ngIf="signInForm.controls['username'].hasError('required') &&  signInForm.controls['username'].touched">This field is required.</span>
+                        </div>
+                    </div>
+                </div>					
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group pass_eye">
+                                   <span class="icon_wrapper">
+                                        <img src="assets/img/icons/password.svg" alt="blyott" width="20"/>
+                                  </span>
+                                <input [type]="password?'password':'text'" class="form-control" formControlName="password" placeholder="password">
+                                <span class="error-message" *ngIf="signInForm.controls['password'].hasError('required') &&  signInForm.controls['password'].touched">This field is required.</span>
+                                 <span class="icon-password">
+                                        <img [src]="password?'assets/img/icons/eye.svg':'assets/img/icons/eye_hide.svg'" alt="blyott" width="20" style="cursor: pointer;" (click)="showPassword()"/>
+                                        
+                                  </span>
+                            </div>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-md btn-white text-uppercase shadow btn-radius " type="submit">Log in</button>				 
+                            </div>
+                    </div>	
+                </div>
+                
+            </form>	
+            <div class="row">
+                    <div class="col-12">
+                        <div class="text-center forgot_pass">
+                             <a [routerLink]="['/forgot-password']" class="text-underline">Forgot/Change Password?</a>
+                        </div>
+                    </div>
+                </div>				
+        </div>	
+    </div>
 </div>

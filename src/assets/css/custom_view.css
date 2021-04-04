@@ -1,0 +1,10 @@
+.custom_view li .custom_detail {display: flex;align-items: center;justify-content: space-between;padding: 0.4rem 1rem; border-bottom: 1px solid #f2f2f2;font-size: 0.8rem;}
+.custom_view {width: 100%;}
+#customview .modal-body{ padding: 0;}
+.custom_view ul {height: calc(100vh - 260px);overflow: auto;margin: inherit;}
+#customview .modal-content{box-shadow: none;}
+#customview .modal-footer{border-radius: 0;}
+#customview .modal-header{border-radius: 0;background:#9da2af;padding: 0.5rem;}
+#customview .modal-dialog{position: fixed;right: 0;top: 84px;bottom: 0;margin: 0;justify-content: flex-start;align-items: self-start;}
+.search_columns ul{padding: 10px; }
+.search_columns ul li a{color: #90929e;font-size: 0.9rem;}

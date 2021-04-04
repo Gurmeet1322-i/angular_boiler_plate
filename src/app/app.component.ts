@@ -12,7 +12,6 @@ export class AppComponent {
   constructor(
     private router:Router
   ){
-    localStorage.setItem('accessToken','fghfdewwrdeydr3y3rtwy');
-    this.router.navigate([MAIN_PATHS.MAIN])
+    
   }
 }

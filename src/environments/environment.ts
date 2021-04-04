@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:'http://192.168.2.17:3002/v1/'
+  baseUrl:'https://api.blyott.com/'
 };
 
 /*

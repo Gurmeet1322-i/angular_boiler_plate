@@ -1,0 +1,29 @@
+.main-panel {-webkit-transition: width 0.25s ease, margin 0.25s ease;transition: width 0.25s ease, margin 0.25s ease;margin-left: 0px;padding-top: 20px;
+min-height: calc(100vh - 83px);display: -webkit-box;display:-ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;background: #f6f7f8;color: #20213A;}
+.content-wrapper {padding:0 15px;}
+.box_height {min-height:calc(100vh - 180px);}
+.main-panel .card-body {background:#2E2D33; border-radius:7px; }
+.lg_icon {max-width:150px;}
+.empty_list p{display:inline-block; position:relative;}
+.add_btn {margin:40px 0 0;}
+.empty_list em img {max-width:130px;}
+.badge_list {flex-wrap:wrap;}
+.badge_list label {min-width:120px; margin:0 15px 5px 0; background:#212121; color:#fff; font-size:14px; border:1px solid #fff; padding:8px 28px 8px 10px; border-radius:7px; position:relative; overflow:hidden; text-align:left; font-weight:300;}
+.badge_list label:last-child {margin-right:0;} 
+.badge_close {cursor:pointer; background:#CF1B1B; position:absolute; right:0; top:0; padding:5px; height:100%; width:26px; text-align:center; display:flex; align-items:center; justify-content:center;}
+
+/* Breadcrumbs */
+.page-title {display:flex; align-items:center; flex-wrap:wrap;}
+.page-title span {font-size:16px; font-weight:400;}
+
+/**/
+.badge_services {max-width:380px;}
+.badge_services .badge {min-width:80px; margin:0 3px 7px; border:0; padding:10px; background-color:#64372d;}
+.badge_services .badge:nth-child(2n) {background-color:#2b4f4f;}
+.badge_services .badge:nth-child(3n) {background-color:#21465e;}
+.badge_services .badge:nth-child(4n) {background-color:#674d30;}
+
+@media (max-width:991px){
+.main-panel {width: 100%; margin-left:0px; padding-top: 15px;}	
+.empty_list em img {max-width:100px;}
+}

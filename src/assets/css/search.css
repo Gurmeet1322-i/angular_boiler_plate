@@ -1,0 +1,11 @@
+.search_list {position: relative;}
+.search_list  .form-control{min-width: 320px;}
+.search_list input{padding: 12px 18px 13px 45px}
+.search_list button {border: 0;background: transparent;box-shadow: none;position: absolute;top: 9px;left: 10px;outline: 0;}
+.display_details li{margin-left: 15px;}
+.display_details li:first-child{margin-left: 0px;}
+
+@media(max-width: 767px){
+.display_details li span{display: none;}
+.search_list .form-control{min-width: auto;}
+}

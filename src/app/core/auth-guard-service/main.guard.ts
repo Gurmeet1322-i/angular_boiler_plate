@@ -22,7 +22,7 @@ export class MainGuard implements CanActivate {
 
 
     isAuthenticated(): boolean {
-        const token = localStorage.getItem('accessToken');
+        const token = localStorage.getItem('res');
         if (token) {
             return true;
         } else {

@@ -1,0 +1,59 @@
+
+	<header>
+		<div class="admin-header blue-bg fixed-top" >
+		<div class="container">
+			<nav class="navbar navbar-expand-lg align-items-center ">
+				<a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt="blyott" /></a>
+				<div class="navbar-collapse" id="navbarSupportedContent">
+					<button class="menu-btn">
+						<img src="assets/img/icons/hamburger_icon.svg" alt="" />
+						<svg id="Capa_1" enable-background="new 0 0 413.348 413.348" height="512"
+							viewBox="0 0 413.348 413.348" width="512" xmlns="http://www.w3.org/2000/svg">
+							<path style="fill:#fff;"
+								d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z" />
+						</svg>
+					</button>
+					<ul class="navbar-nav ml-auto align-items-center navbar-right-top">
+						<li class="nav-item dropdown nav-user">
+							<div class="d-flex align-items-center nav-link nav-user-img">
+								<div class="nav-user-info text-right">
+									<h6 class="mb-0 nav-user-name">John Williams </h6>
+									<span class="pull-right text-uppercase">uber-master</span>
+								</div>
+								<a class="user_pic ml-2" href="javascript:void(0)" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/user.jpg" alt="" class="user-avatar-md rounded-circle">
+								</a>
+								<!-- <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+									aria-labelledby="navbarDropdownMenuLink2">
+									<a class="dropdown-item" href="#">Setting</a> 
+									<a class="dropdown-item" href="login.html">Logout</a>
+								</div> -->
+							</div>
+						</li>
+						<li class="nav-item">
+							<button class="btn px-0" data-toggle="modal" data-target="#addUser">
+								<i class="mr-1">
+									<img src="assets/img/icons/question.svg" alt="" width="20" /></i>
+							</button>
+						</li>
+						<li class="nav-item">
+							<div id="drop" class="dropdown px-0 ">
+								<button class="btn btn-transparent dropdown-toggle px-0" type="button"
+									id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									<i><img src="assets/img/icons/dots_icon_white.svg" alt="" width="18" (click)="navbarToggle()" /></i>
+								</button>
+								<div id="nav-drop" class="dropdown-menu dropdown-menu-right nav-user-dropdown "
+									aria-labelledby="navbarDropdownMenuLink2">
+									<!-- <a class="dropdown-item" href="#">Setting</a> -->
+									<a class="dropdown-item" href="javascript:void(0)" (click)="logout()">Logout</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		</div>
+	</header>

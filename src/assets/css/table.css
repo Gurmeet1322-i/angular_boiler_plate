@@ -1,0 +1,96 @@
+.custom_table table {border-radius:7px; overflow:hidden; margin:0 0 25px;}
+.custom_table table th {height: 48px; vertical-align: middle;color:#90929e;}
+.custom_table table thead {background: #f6f7f8;}
+.custom_table table th, .custom_table table td {font-size:14px;}
+.custom_table table td{position: relative; text-transform: capitalize;}
+.custom_table table th:nth-child(3), .custom_table table td:nth-child(3){width: 120px; text-align: center}
+.custom_table table td:nth-child(4){color: #E16450;}
+.custom_table table td:first-child { width: 50px;}
+.custom_table table td:last-child:after{display: none;}
+.custom_table table td:first-child:after{display: none;}
+.custom_table table td:after{position: absolute; content: ""; right: 0; top: 10px; height: 60%; width: 1px; background: #9697a3; opacity: 0.5;}
+.custom_table table th {background:#f8f8f8; border-color:transparent; font-weight:600;}
+.custom_table table th:focus{	outline:0;}
+.custom_table .form-control {padding: 3px 10px;height: 32px;min-height: 30px; border: 1px solid #007bff;}
+.table td, .table th{vertical-align: middle;}
+.custom_table table tbody {min-height:140px;}
+.custom_table table td { border-color:transparent;}
+.custom_table table tr:nth-child(even) {background:#ffffff;}
+.custom_table table tr:nth-child(odd) {background:#f7fcff;}
+.custom_table .dropdown {text-align:right; width:20px;}
+.custom_table .dropdown-toggle {text-align:right; padding:0;}
+.dropdown-toggle::after {
+	display:none;
+}
+.custom_table table tr.enter_text td:after {display: none;}
+.enter_text td:last-child{display: flex; align-items: center;}
+.enter_text td span.badge{margin-left: 10px; padding: 6px;}
+.dataTables_info {float:left; margin:7px 0 0; font-size:15px;}
+
+.main-panel table.dataTable thead th{padding: 0.40rem 0.75rem;}
+tr#add_row_detail {
+    display: none;
+}
+th.active .sorting {
+    background: #e0e0e0;
+    padding: 6px;
+    border-radius: 5px;
+	color: #20213A;
+}
+.badge{cursor: pointer;}
+/*------
+pagination
+-------*/
+/* .dataTables_paginate {float:right; background:#fff; border-radius:6px;} */
+/* .paginate_button {min-width:36px; text-align:center; font-size:15px; color:#404040; cursor:pointer; padding:7px 15px; display:inline-block;} */
+/* .paginate_button.next, .paginate_button.previous { background:#fff;}  */
+/* .paginate_button.next {border-radius:0 7px 7px 0;} */
+/* .paginate_button.previous {border-radius:7px 0 0 7px;} */
+/* .paginate_button.disabled {color:#A0A0A0; pointer-events:none; } */
+/* .paginate_button.current {background:#CF1B1B; color:#fff;} */
+/* .paginate_button:hover, .paginate_button:focus {background:#EC0F0F; outline:0!important; border:0!important; text-decoration:none;} */
+
+
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: .75rem;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+	position: relative;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+table.dataTable thead .sorting em,
+table.dataTable thead .sorting_asc em,
+table.dataTable thead .sorting_desc em,
+table.dataTable thead .sorting_asc_disabled em,
+table.dataTable thead .sorting_desc_disabled em{
+padding-left: 10px;
+	
+}
+table.dataTable thead .sorting.active{background: #ccc;}
+
+@media (max-width:575px){
+.dataTables_length, .dataTables_filter{width: 100%;text-align: center;}
+.dataTables_info {text-align:left;}
+.dataTables_paginate {margin:10px auto; display: inline-block; float:left;}
+}
+
+
+@media screen and (max-width: 991px) {
+	.enter_text td:last-child{align-items: start;    margin-bottom: 10px;}
+table {border: 0;}
+table thead {border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}  
+table tr { display: block; margin-bottom: .625em;  padding: 10px 0;}  
+table td { border-bottom: 1px solid #ddd; display: block; font-size: .8em;text-align: right;}
+.custom_table table td { position: relative;display: flex;flex-direction: column; align-items: self-start; padding: 10px 10px 0; text-align: left;}
+.custom_table table tr:nth-child(even) {background:#f7fcff;margin-top: 10px;}
+table td::after{display: none;}
+table td::before { content: attr(data-col); float: left; font-weight: bold; text-transform: capitalize; color: #9697a3;font-size: 0.8rem;}
+table td:last-child { border-bottom: 0;}
+}

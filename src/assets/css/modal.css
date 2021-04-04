@@ -1,0 +1,13 @@
+body.modal-open{padding-right: 0 !important;}
+.modal-content {background: #20223b; box-shadow:none; padding:0px; border: 0; border-radius: 15px;}
+.modal-body {background:#f6f7f8;}
+.modal-header, .modal-footer {border:0;}
+.modal-header {border-radius: 15px 15px 0 0;}
+.modal-footer {border-radius: 0px 0px 15px 15px;}
+.modal-header {background: #20223b;margin: 0;color: #fff;}
+.modal-footer {background: #f6f7f8;border-top: 1px solid #20223b;padding: 1rem 1rem;}
+.modal-title {display: flex;align-items: center;	}
+.modal-title span {margin-left:20px;position: relative;display:flex; align-items:center;color: rgba(242, 242, 242, 0.91);}
+.modal-title span:before {background: #fff;padding: 2px;width: 2px;height: 2px;border-radius: 15px;position: absolute;content: "";right: 0;left: -10px;top: 7px;bottom: 0;}
+#bulkedit .modal-body form{padding-left: 25px;padding-right: 25px;}
+
